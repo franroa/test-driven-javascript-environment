@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /opt/yarn/bin/yarn.js test
+  /usr/local/bin/node /opt/yarn/bin/yarn.js add chai -D
 
 PATH: 
   /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -26,18 +26,17 @@ npm manifest:
       "test": "karma start --reporters clear-screen,dots,coverage"
     },
     "devDependencies": {
-      "chai": "^4.1.0",
-      "istanbul": "^0.4.4",
-      "karma": "^1.7.0",
-      "karma-chai": "^0.1.0",
-  //    "karma-chrome-launcher": "^2.2.0",
-      "karma-clear-screen-reporter": "^1.0.0",
-      "karma-cli": "^1.0.1",
-      "karma-coverage": "^1.1.1",
-      "karma-mocha": "^1.3.0",
-      "karma-xvfb-chrome-launcher": "^0.0.1",
-      "mocha": "^3.5.0",
-      "karma-firefox-launcher": "^1.0.1"
+  //    "chai": "^4.1.0",
+  //    "istanbul": "^0.4.4",
+  //    "karma": "^1.7.0",
+  //    "karma-chai": "^0.1.0",
+  //    "karma-clear-screen-reporter": "^1.0.0",
+  //    "karma-cli": "^1.0.1",
+  //    "karma-coverage": "^1.1.1",
+  //    "karma-mocha": "^1.3.0",
+  //    "karma-chrome-launcher": "^0.0.1",
+  //    "mocha": "^3.5.0",
+  //    "karma-firefox-launcher": "^1.0.1"
     }
   }
 
@@ -730,12 +729,6 @@ Lockfile:
       combined-stream "^1.0.5"
       mime-types "^2.1.12"
   
-  fs-access@^1.0.0:
-    version "1.0.1"
-    resolved "https://registry.yarnpkg.com/fs-access/-/fs-access-1.0.1.tgz#d6a87f262271cefebec30c553407fb995da8777a"
-    dependencies:
-      null-check "^1.0.0"
-  
   fs.realpath@^1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
@@ -1136,12 +1129,9 @@ Lockfile:
     version "0.1.0"
     resolved "https://registry.yarnpkg.com/karma-chai/-/karma-chai-0.1.0.tgz#bee5ad40400517811ae34bb945f762909108b79a"
   
-  karma-chrome-launcher@^2.2.0:
-    version "2.2.0"
-    resolved "https://registry.yarnpkg.com/karma-chrome-launcher/-/karma-chrome-launcher-2.2.0.tgz#cf1b9d07136cc18fe239327d24654c3dbc368acf"
-    dependencies:
-      fs-access "^1.0.0"
-      which "^1.2.1"
+  karma-chrome-launcher@^0.0.1:
+    version "0.0.1"
+    resolved "https://registry.yarnpkg.com/karma-chrome-launcher/-/karma-chrome-launcher-0.0.1.tgz#0804ef545cbd3cfb1de4effdc24d7e25f957869d"
   
   karma-clear-screen-reporter@^1.0.0:
     version "1.0.0"
@@ -1172,14 +1162,6 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/karma-mocha/-/karma-mocha-1.3.0.tgz#eeaac7ffc0e201eb63c467440d2b69c7cf3778bf"
     dependencies:
       minimist "1.2.0"
-  
-  karma-xvfb-chrome-launcher@^0.0.1:
-    version "0.0.1"
-    resolved "https://registry.yarnpkg.com/karma-xvfb-chrome-launcher/-/karma-xvfb-chrome-launcher-0.0.1.tgz#4d398e3a80af210205d9caa534a5563e10a390b1"
-    dependencies:
-      fs-access "^1.0.0"
-      which "^1.2.11"
-      xvfb "^0.2.3"
   
   karma@^1.7.0:
     version "1.7.0"
@@ -1430,7 +1412,7 @@ Lockfile:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
   
-  nan@>=2.0.0, nan@^2.3.0:
+  nan@^2.3.0:
     version "2.6.2"
     resolved "https://registry.yarnpkg.com/nan/-/nan-2.6.2.tgz#e4ff34e6c95fdfb5aecc08de6596f43605a7db45"
   
@@ -1488,10 +1470,6 @@ Lockfile:
       console-control-strings "~1.1.0"
       gauge "~2.7.3"
       set-blocking "~2.0.0"
-  
-  null-check@^1.0.0:
-    version "1.0.0"
-    resolved "https://registry.yarnpkg.com/null-check/-/null-check-1.0.0.tgz#977dffd7176012b9ec30d2a39db5cf72a0439edd"
   
   number-is-nan@^1.0.0:
     version "1.0.1"
@@ -1864,12 +1842,6 @@ Lockfile:
     version "3.0.2"
     resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   
-  sleep@3.0.x:
-    version "3.0.1"
-    resolved "https://registry.yarnpkg.com/sleep/-/sleep-3.0.1.tgz#be4d17c579360e07e04ed8172ba2b10a69054df3"
-    dependencies:
-      nan ">=2.0.0"
-  
   sntp@1.x.x:
     version "1.0.9"
     resolved "https://registry.yarnpkg.com/sntp/-/sntp-1.0.9.tgz#6541184cc90aeea6c6e7b35e2659082443c66198"
@@ -2163,7 +2135,7 @@ Lockfile:
     version "2.0.1"
     resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
   
-  which@^1.1.1, which@^1.2.1, which@^1.2.11:
+  which@^1.1.1:
     version "1.3.0"
     resolved "https://registry.yarnpkg.com/which/-/which-1.3.0.tgz#ff04bdfc010ee547d780bec38e1ac1c2777d253a"
     dependencies:
@@ -2210,12 +2182,6 @@ Lockfile:
     version "1.5.3"
     resolved "https://registry.yarnpkg.com/xmlhttprequest-ssl/-/xmlhttprequest-ssl-1.5.3.tgz#185a888c04eca46c3e4070d99f7b49de3528992d"
   
-  xvfb@^0.2.3:
-    version "0.2.3"
-    resolved "https://registry.yarnpkg.com/xvfb/-/xvfb-0.2.3.tgz#5588a968754593913f33c0c0e2cbb73741235832"
-    optionalDependencies:
-      sleep "3.0.x"
-  
   yargs@~3.10.0:
     version "3.10.0"
     resolved "https://registry.yarnpkg.com/yargs/-/yargs-3.10.0.tgz#f7ee7bd857dd7c1d2d38c0e74efbd681d1431fd1"
@@ -2230,7 +2196,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
 
 Trace: 
-  SyntaxError: /myproject/package.json: Unexpected token / in JSON at position 339
+  SyntaxError: /myproject/package.json: Unexpected token / in JSON at position 240
       at JSON.parse (<anonymous>)
       at /opt/yarn/lib/yarn-cli.js:747:57
       at Generator.next (<anonymous>)

@@ -1,6 +1,9 @@
 FROM node:8.2
 
-RUN apt-get update && apt-get install -y
+# ENV DEBIAN_FRONTEND=noninteractive
+
+# RUN apt-get update && apt-get install -y curl xvfb chromium
+
 
 RUN \
   wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && \
@@ -8,3 +11,5 @@ RUN \
   apt-get update && \
   apt-get install -y google-chrome-stable && \
   rm -rf /var/lib/apt/lists/*
+
+# RUN ln -s /usr/bin/xvfb-chromium /usr/bin/chromium-browser
